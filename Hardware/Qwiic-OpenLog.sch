@@ -1832,6 +1832,19 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <vertex x="1.8364" y="-0.0051" curve="-90.012967"/>
 </polygon>
 </package>
+<package name="CAP-PTH-10MM">
+<description>2 PTH spaced 10mm apart</description>
+<wire x1="-0.5" y1="0.635" x2="-0.5" y2="0" width="0.2032" layer="21"/>
+<pad name="1" x="-5" y="0" drill="0.9" diameter="1.651"/>
+<pad name="2" x="5" y="0" drill="0.9" diameter="1.651"/>
+<text x="0" y="1" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-1" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+<wire x1="-0.5" y1="0" x2="-0.5" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="0.5" y1="0.635" x2="0.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="0.5" y1="0" x2="0.5" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="0" x2="-3.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="0.5" y1="0" x2="3.5" y2="0" width="0.2032" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -1955,6 +1968,62 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <technology name="">
 <attribute name="PROD_ID" value="CAP-14106"/>
 <attribute name="VALUE" value="4.7uF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="47PF" prefix="C">
+<description>&lt;h3&gt;47pF ceramic capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603-50V-5%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08913"/>
+<attribute name="VALUE" value="47pF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="10NF" prefix="C">
+<description>&lt;h3&gt;0.01uF/10nF/10,000pF ceramic capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;
+
+CAP-09321</description>
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-PTH-10MM-10000V-1-%" package="CAP-PTH-10MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-09321"/>
+<attribute name="VALUE" value="10nF"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603-50V-10%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-00867"/>
+<attribute name="VALUE" value="10nF"/>
 </technology>
 </technologies>
 </device>
@@ -20750,6 +20819,250 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Clocks">
+<description>&lt;h3&gt;SparkFun Clocks, Oscillators and Resonators&lt;/h3&gt;
+This library contains the real-time clocks, oscillators, resonators, and crystals we use. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="RV-1805">
+<description>&lt;h3&gt;SON 10-pin - Miniature SMT ceramic package&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: [10]&lt;/li&gt;
+&lt;li&gt;Pin pitch: [0.8mm]&lt;/li&gt;
+&lt;li&gt;Area: [3.7mm x 2.5mm]&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=http://www.microcrystal.com/images/_Product-Documentation/02_Oscillator_&amp;_RTC_Modules/02_Application_Manual/RV-1805-C3_App-Manual.pdf&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="1.85" y1="1.25" x2="1.85" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.85" y1="-1.25" x2="-1.85" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.85" y1="-1.25" x2="-1.85" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-1.85" y1="1.25" x2="1.85" y2="1.25" width="0.127" layer="51"/>
+<text x="-1.85" y="1.95" size="0.508" layer="25">&gt;Name</text>
+<text x="-1.75" y="-2.45" size="0.508" layer="27">&gt;Value</text>
+<circle x="-2.45" y="-1.75" radius="0.14141875" width="0" layer="21"/>
+<wire x1="1.48" y1="1.8" x2="2.1" y2="1.8" width="0.1778" layer="21"/>
+<wire x1="2.1" y1="1.8" x2="2.1" y2="1" width="0.1778" layer="21"/>
+<wire x1="2.1" y1="-1" x2="2.1" y2="-1.8" width="0.1778" layer="21"/>
+<wire x1="2.1" y1="-1.8" x2="1.48" y2="-1.8" width="0.1778" layer="21"/>
+<wire x1="-1.48" y1="-1.8" x2="-2.1" y2="-1.8" width="0.1778" layer="21"/>
+<wire x1="-2.1" y1="-1.8" x2="-2.1" y2="-1" width="0.1778" layer="21"/>
+<wire x1="-2.1" y1="1" x2="-2.1" y2="1.8" width="0.1778" layer="21"/>
+<wire x1="-2.1" y1="1.8" x2="-1.48" y2="1.8" width="0.1778" layer="21"/>
+<smd name="1" x="-1.6" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90" cream="no"/>
+<smd name="2" x="-0.8" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="0" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90" cream="no"/>
+<smd name="4" x="0.8" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90" cream="no"/>
+<smd name="5" x="1.6" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90" cream="no"/>
+<smd name="6" x="1.6" y="1.1" dx="0.8" dy="0.5" layer="1" rot="R270" cream="no"/>
+<smd name="7" x="0.8" y="1.1" dx="0.8" dy="0.5" layer="1" rot="R270" cream="no"/>
+<smd name="8" x="0" y="1.1" dx="0.8" dy="0.5" layer="1" rot="R270" cream="no"/>
+<smd name="9" x="-0.8" y="1.1" dx="0.8" dy="0.5" layer="1" rot="R270" cream="no"/>
+<smd name="10" x="-1.6" y="1.1" dx="0.8" dy="0.5" layer="1" rot="R270" cream="no"/>
+<smd name="11" x="0" y="0" dx="0" dy="0" layer="1" cream="no"/>
+<rectangle x1="-0.1875" y1="0.8" x2="0.1875" y2="1.4" layer="31"/>
+<rectangle x1="-0.9875" y1="0.8" x2="-0.6125" y2="1.4" layer="31"/>
+<rectangle x1="-1.7875" y1="0.8" x2="-1.4125" y2="1.4" layer="31"/>
+<rectangle x1="0.6125" y1="0.8" x2="0.9875" y2="1.4" layer="31"/>
+<rectangle x1="1.4125" y1="0.8" x2="1.7875" y2="1.4" layer="31"/>
+<rectangle x1="1.4125" y1="-1.4" x2="1.7875" y2="-0.8" layer="31"/>
+<rectangle x1="0.6125" y1="-1.4" x2="0.9875" y2="-0.8" layer="31"/>
+<rectangle x1="-0.1875" y1="-1.4" x2="0.1875" y2="-0.8" layer="31"/>
+<rectangle x1="-0.9875" y1="-1.4" x2="-0.6125" y2="-0.8" layer="31"/>
+<rectangle x1="-1.7875" y1="-1.4" x2="-1.4125" y2="-0.8" layer="31"/>
+</package>
+</packages>
+<symbols>
+<symbol name="RV-1805">
+<description>&lt;h3&gt;Micro Crystal Switzerland - RV-1805-C3 - Extremely low power RTC module&lt;/h3&gt;
+&lt;p&gt;This RTC IC has been specially designed for ultimate low current
+consumption of typically 60 nA @ VDD 3.0V for 32.768 kHz XTAL mode.
+Additionally, there is an RC-Mode consuming only 17nA and an autocalibrated
+RC-mode consuming 22nA which permits to operate this RTC
+module several hours at Backup Supply Voltage using low-cost MLCC.
+The very small SMT ceramic-package combines the 32.768 kHz crystal
+unit with the CMOS-based oscillator and real-time-clock IC. &lt;/p&gt;</description>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<pin name="GND" x="-12.7" y="-7.62" length="short"/>
+<pin name="VCC" x="-12.7" y="10.16" length="short"/>
+<pin name="SDA" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="SCL" x="12.7" y="10.16" length="short" rot="R180"/>
+<pin name="CAP_RC" x="-12.7" y="2.54" length="short"/>
+<pin name="CLK/!INT" x="12.7" y="-7.62" length="short" rot="R180"/>
+<pin name="VBACKUP" x="-12.7" y="7.62" length="short"/>
+<pin name="PSW" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="WDI" x="12.7" y="-2.54" length="short" rot="R180"/>
+<text x="-10.16" y="13.462" size="1.778" layer="95">&gt;Name</text>
+<text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;Value</text>
+<pin name="!RST" x="12.7" y="-5.08" length="short" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RV-1805" prefix="U">
+<description>&lt;h3&gt;Micro Crystal Switzerland - RV-1805-C3 - Extremely low power RTC module&lt;/h3&gt;
+&lt;p&gt;This RTC IC has been specially designed for ultimate low current
+consumption of typically 60 nA @ VDD 3.0V for 32.768 kHz XTAL mode.
+Additionally, there is an RC-Mode consuming only 17nA and an autocalibrated
+RC-mode consuming 22nA which permits to operate this RTC
+module several hours at Backup Supply Voltage using low-cost MLCC.
+The very small SMT ceramic-package combines the 32.768 kHz crystal
+unit with the CMOS-based oscillator and real-time-clock IC. &lt;/p&gt;</description>
+<gates>
+<gate name="U1" symbol="RV-1805" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RV-1805">
+<connects>
+<connect gate="U1" pin="!RST" pad="10"/>
+<connect gate="U1" pin="CAP_RC" pad="2"/>
+<connect gate="U1" pin="CLK/!INT" pad="3"/>
+<connect gate="U1" pin="GND" pad="6"/>
+<connect gate="U1" pin="PSW" pad="8"/>
+<connect gate="U1" pin="SCL" pad="4"/>
+<connect gate="U1" pin="SDA" pad="5"/>
+<connect gate="U1" pin="VBACKUP" pad="7"/>
+<connect gate="U1" pin="VCC" pad="1"/>
+<connect gate="U1" pin="WDI" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13900" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="SparkFun-Batteries">
+<description>&lt;h3&gt;SparkFun Batteries&lt;/h3&gt;
+This library contains battery clips, connectors, and appropriately sized silk outlines for LiPo batteries. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="ML414H_IV01E">
+<description>&lt;h3&gt;SEIKO ML414H-IV01E Reflowable Lithium Battery&lt;/h3&gt;
+
+&lt;p&gt;
+ML414H is a rechargeable, coin type battery with features
+such as Pb-free reflowable (Peak temperature: 260 C) and
+high temperature heat resistance.
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;3V&lt;/li&gt;
+&lt;li&gt;1mAH&lt;/li&gt;
+&lt;li&gt;4.8mm Diamter&lt;/li&gt;
+&lt;/ul&gt;</description>
+<circle x="0" y="0" radius="2.4" width="0.0508" layer="51"/>
+<smd name="-" x="0.6" y="-1.85" dx="4.2" dy="1.7" layer="1" stop="no" cream="no"/>
+<polygon width="0.05" layer="1">
+<vertex x="0.28" y="2.68"/>
+<vertex x="2.68" y="2.68"/>
+<vertex x="2.68" y="0.28"/>
+</polygon>
+<polygon width="0.05" layer="29">
+<vertex x="0.28" y="2.68"/>
+<vertex x="2.68" y="2.68"/>
+<vertex x="2.68" y="0.28"/>
+</polygon>
+<polygon width="0.05" layer="31">
+<vertex x="0.28" y="2.68"/>
+<vertex x="2.68" y="2.68"/>
+<vertex x="2.68" y="0.28"/>
+</polygon>
+<rectangle x1="-1.5" y1="-2.7" x2="2.7" y2="-1" layer="31"/>
+<rectangle x1="-1.5" y1="-2.7" x2="2.7" y2="-1" layer="29"/>
+<smd name="+" x="2.022" y="2.032" dx="1" dy="1" layer="1" stop="no" cream="no"/>
+<text x="-1.016" y="2.921" size="0.381" layer="25">&gt;NAME</text>
+<text x="-1.016" y="-3.302" size="0.381" layer="27">&gt;VALUE</text>
+<polygon width="0.02" layer="51">
+<vertex x="-1.1" y="-2.4"/>
+<vertex x="2.4" y="-2.4"/>
+<vertex x="2.4" y="-1.01"/>
+<vertex x="-1.1" y="-1.01"/>
+</polygon>
+<polygon width="0.02" layer="51">
+<vertex x="0.8" y="2.4"/>
+<vertex x="2.4" y="2.4"/>
+<vertex x="2.4" y="0.8"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="BATTERY">
+<description>&lt;h3&gt;Battery (Single-Cell)&lt;/h3&gt;</description>
+<wire x1="-1.27" y1="3.81" x2="-1.27" y2="-3.81" width="0.4064" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="3.81" x2="1.27" y2="-3.81" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.524" y2="0" width="0.1524" layer="94"/>
+<text x="0" y="4.318" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-4.318" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
+<pin name="-" x="5.08" y="0" visible="off" length="short" direction="pwr" rot="R180"/>
+<pin name="+" x="-5.08" y="0" visible="off" length="short" direction="pwr"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ML414H_IV01E_BATTERY" prefix="BT">
+<description>&lt;h3&gt;SEIKO ML414H-IV01E Reflowable Lithium Battery&lt;/h3&gt;
+
+&lt;p&gt;
+ML414H is a rechargeable, coin type battery with features
+such as Pb-free reflowable (Peak temperature: 260 C) and
+high temperature heat resistance.
+&lt;/p&gt;
+
+Battery Characteristics: 
+&lt;ul&gt;
+&lt;li&gt;3.1V max voltage&lt;/li&gt;
+&lt;li&gt;Voff is 2V&lt;/li&gt;
+&lt;li&gt;1mAH&lt;/li&gt;
+&lt;li&gt;3k series resistor with battery&lt;/li&gt;
+&lt;li&gt;72 hour charge time from 2.0-3.1V&lt;/li&gt;
+&lt;li&gt;2.3-2.8V initial charge&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="BATTERY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ML414H_IV01E">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="BATT-14267" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -20817,12 +21130,28 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J3" library="SparkFun-Connectors" deviceset="GATOR" device="GATOR_MINI" value="GATORGATOR_MINI"/>
 <part name="J4" library="SparkFun-Connectors" deviceset="GATOR" device="GATOR_MINI" value="GATORGATOR_MINI"/>
 <part name="J6" library="SparkFun-Connectors" deviceset="GATOR" device="GATOR_MINI" value="GATORGATOR_MINI"/>
+<part name="R9" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
+<part name="U1" library="SparkFun-Clocks" deviceset="RV-1805" device=""/>
+<part name="GND12" library="SparkFun" deviceset="GND" device=""/>
+<part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND13" library="SparkFun" deviceset="GND" device=""/>
+<part name="C2" library="SparkFun-Capacitors" deviceset="47PF" device="-0603-50V-5%" value="47pF"/>
+<part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="C4" library="SparkFun-Capacitors" deviceset="10NF" device="-0603-50V-10%" value="10nF"/>
+<part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND14" library="SparkFun" deviceset="GND" device=""/>
+<part name="R10" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
+<part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="R11" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
+<part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND15" library="SparkFun" deviceset="GND" device=""/>
+<part name="BT1" library="SparkFun-Batteries" deviceset="ML414H_IV01E_BATTERY" device=""/>
+<part name="R7" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
+<part name="GND16" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="2.54" y="15.24" size="1.778" layer="97">This board is meant to be used with Qwiic. 
-The boot header is meant for Serial Basic connection for programming.</text>
 <text x="238.76" y="7.62" size="2.54" layer="94">V12</text>
 <text x="170.434" y="11.43" size="2.54" layer="94">N. Seidle</text>
 <text x="17.78" y="170.18" size="2.54" layer="97">I2C Pull-up</text>
@@ -20838,6 +21167,9 @@ The boot header is meant for Serial Basic connection for programming.</text>
 <text x="175.26" y="55.88" size="1.778" layer="97">7-Bit I2C Address Jumper</text>
 <text x="177.8" y="50.8" size="1.778" layer="97">Closed = 0x29</text>
 <text x="177.8" y="53.34" size="1.778" layer="97">Open (default) = 0x2A</text>
+<text x="17.78" y="50.8" size="2.54" layer="97" font="vector">RTC Module</text>
+<text x="17.78" y="48.26" size="1.778" layer="97">Operating voltage: 1.5-3.6 V</text>
+<text x="17.78" y="45.72" size="1.778" layer="97">I2C Address: 0xD2</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -21008,6 +21340,68 @@ The boot header is meant for Serial Basic connection for programming.</text>
 <instance part="J6" gate="G$1" x="114.3" y="81.28" smashed="yes">
 <attribute name="NAME" x="119.38" y="81.28" size="1.778" layer="95" font="vector"/>
 </instance>
+<instance part="R9" gate="G$1" x="99.06" y="22.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="97.536" y="22.86" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="100.584" y="22.86" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="U1" gate="U1" x="55.88" y="15.24" smashed="yes">
+<attribute name="NAME" x="45.72" y="28.702" size="1.778" layer="95"/>
+<attribute name="VALUE" x="45.72" y="2.54" size="1.778" layer="96"/>
+</instance>
+<instance part="GND12" gate="1" x="33.02" y="2.54" smashed="yes">
+<attribute name="VALUE" x="30.48" y="0" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY6" gate="G$1" x="99.06" y="30.48" smashed="yes">
+<attribute name="VALUE" x="99.06" y="33.274" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND13" gate="1" x="71.12" y="2.54" smashed="yes">
+<attribute name="VALUE" x="68.58" y="0" size="1.778" layer="96"/>
+</instance>
+<instance part="C2" gate="G$1" x="33.02" y="10.16" smashed="yes">
+<attribute name="NAME" x="34.544" y="13.081" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="34.544" y="8.001" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="SUPPLY8" gate="G$1" x="40.64" y="27.94" smashed="yes">
+<attribute name="VALUE" x="40.64" y="30.734" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="C4" gate="G$1" x="5.08" y="15.24" smashed="yes">
+<attribute name="NAME" x="6.604" y="18.161" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="6.604" y="13.081" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="SUPPLY7" gate="G$1" x="5.08" y="22.86" smashed="yes">
+<attribute name="VALUE" x="5.08" y="25.654" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND14" gate="1" x="5.08" y="7.62" smashed="yes">
+<attribute name="VALUE" x="2.54" y="5.08" size="1.778" layer="96"/>
+</instance>
+<instance part="R10" gate="G$1" x="106.68" y="22.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="105.156" y="22.86" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="108.204" y="22.86" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="SUPPLY9" gate="G$1" x="106.68" y="30.48" smashed="yes">
+<attribute name="VALUE" x="106.68" y="33.274" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="R11" gate="G$1" x="114.3" y="22.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="112.776" y="22.86" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="115.824" y="22.86" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="SUPPLY10" gate="G$1" x="114.3" y="30.48" smashed="yes">
+<attribute name="VALUE" x="114.3" y="33.274" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND15" gate="1" x="40.64" y="2.54" smashed="yes">
+<attribute name="VALUE" x="38.1" y="0" size="1.778" layer="96"/>
+</instance>
+<instance part="BT1" gate="G$1" x="22.86" y="15.24" smashed="yes" rot="R270">
+<attribute name="NAME" x="27.178" y="15.24" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="18.542" y="15.24" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
+</instance>
+<instance part="R7" gate="G$1" x="35.56" y="22.86" smashed="yes" rot="R180">
+<attribute name="NAME" x="35.56" y="21.336" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="35.56" y="24.384" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
+</instance>
+<instance part="GND16" gate="1" x="22.86" y="2.54" smashed="yes">
+<attribute name="VALUE" x="20.32" y="0" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -21077,6 +21471,33 @@ The boot header is meant for Serial Basic connection for programming.</text>
 <wire x1="109.22" y1="81.28" x2="109.22" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="J6" gate="G$1" pin="P$1"/>
+</segment>
+<segment>
+<pinref part="U1" gate="U1" pin="WDI"/>
+<wire x1="68.58" y1="12.7" x2="71.12" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="12.7" x2="71.12" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="5.08" y1="12.7" x2="5.08" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND12" gate="1" pin="GND"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="7.62" x2="33.02" y2="5.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="U1" pin="GND"/>
+<wire x1="40.64" y1="7.62" x2="43.18" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+<wire x1="40.64" y1="5.08" x2="40.64" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="BT1" gate="G$1" pin="-"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+<wire x1="22.86" y1="10.16" x2="22.86" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -21277,6 +21698,32 @@ The boot header is meant for Serial Basic connection for programming.</text>
 <pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
 <pinref part="J4" gate="G$1" pin="P$1"/>
 </segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="30.48" x2="99.06" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="SUPPLY8" gate="G$1" pin="3.3V"/>
+<pinref part="U1" gate="U1" pin="VCC"/>
+<wire x1="40.64" y1="27.94" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="25.4" x2="43.18" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY7" gate="G$1" pin="3.3V"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="5.08" y1="22.86" x2="5.08" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="30.48" x2="106.68" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="SUPPLY9" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="30.48" x2="114.3" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="SUPPLY10" gate="G$1" pin="3.3V"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -21300,6 +21747,11 @@ The boot header is meant for Serial Basic connection for programming.</text>
 <label x="106.68" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J2" gate="G$1" pin="P$1"/>
 </segment>
+<segment>
+<label x="88.9" y="25.4" size="1.27" layer="95" xref="yes"/>
+<wire x1="68.58" y1="25.4" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U1" pin="SCL"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -21322,6 +21774,11 @@ The boot header is meant for Serial Basic connection for programming.</text>
 <wire x1="111.76" y1="86.36" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
 <label x="106.68" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J3" gate="G$1" pin="P$1"/>
+</segment>
+<segment>
+<label x="88.9" y="22.86" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="U1" pin="SDA"/>
+<wire x1="68.58" y1="22.86" x2="88.9" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADDR" class="0">
@@ -21353,15 +21810,56 @@ The boot header is meant for Serial Basic connection for programming.</text>
 <wire x1="22.86" y1="149.86" x2="25.4" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="!INT" class="0">
+<segment>
+<wire x1="68.58" y1="7.62" x2="99.06" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="17.78" x2="99.06" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U1" pin="CLK/!INT"/>
+</segment>
+</net>
+<net name="VBACKUP" class="0">
+<segment>
+<pinref part="U1" gate="U1" pin="VBACKUP"/>
+<wire x1="43.18" y1="22.86" x2="40.64" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="U1" gate="U1" pin="CAP_RC"/>
+<wire x1="33.02" y1="17.78" x2="43.18" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="17.78" x2="33.02" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="!RST" class="0">
+<segment>
+<pinref part="U1" gate="U1" pin="!RST"/>
+<wire x1="68.58" y1="10.16" x2="106.68" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="10.16" x2="106.68" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PSW" class="0">
+<segment>
+<pinref part="U1" gate="U1" pin="PSW"/>
+<wire x1="68.58" y1="15.24" x2="114.3" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="17.78" x2="114.3" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="BT1" gate="G$1" pin="+"/>
+<wire x1="22.86" y1="20.32" x2="22.86" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="22.86" x2="30.48" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
