@@ -21389,19 +21389,19 @@ Switches electrical signals</description>
 <instance part="GND14" gate="1" x="15.24" y="12.7" smashed="yes">
 <attribute name="VALUE" x="12.7" y="10.16" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="R10" gate="G$1" x="99.06" y="27.94" smashed="yes" rot="R90">
-<attribute name="NAME" x="97.536" y="27.94" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="100.584" y="27.94" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R10" gate="G$1" x="101.6" y="27.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="100.076" y="27.94" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="103.124" y="27.94" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="SUPPLY9" gate="G$1" x="99.06" y="35.56" smashed="yes">
-<attribute name="VALUE" x="99.06" y="38.354" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY9" gate="G$1" x="101.6" y="35.56" smashed="yes">
+<attribute name="VALUE" x="101.6" y="38.354" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="R11" gate="G$1" x="106.68" y="27.94" smashed="yes" rot="R90">
-<attribute name="NAME" x="105.156" y="27.94" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="108.204" y="27.94" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R11" gate="G$1" x="111.76" y="27.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="110.236" y="27.94" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="113.284" y="27.94" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="SUPPLY10" gate="G$1" x="106.68" y="35.56" smashed="yes">
-<attribute name="VALUE" x="106.68" y="38.354" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY10" gate="G$1" x="111.76" y="35.56" smashed="yes">
+<attribute name="VALUE" x="111.76" y="38.354" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="GND15" gate="1" x="50.8" y="7.62" smashed="yes">
 <attribute name="VALUE" x="48.26" y="5.08" size="1.778" layer="96" font="vector"/>
@@ -21754,12 +21754,12 @@ Switches electrical signals</description>
 </segment>
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="35.56" x2="99.06" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="35.56" x2="106.68" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="35.56" x2="111.76" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="SUPPLY10" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
@@ -21860,17 +21860,17 @@ Switches electrical signals</description>
 <net name="!RST" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="!RST"/>
-<wire x1="78.74" y1="15.24" x2="99.06" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="15.24" x2="101.6" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="15.24" x2="99.06" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PSW" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="PSW"/>
-<wire x1="78.74" y1="20.32" x2="106.68" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="20.32" x2="111.76" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="22.86" x2="106.68" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="22.86" x2="111.76" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">

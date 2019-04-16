@@ -170,6 +170,7 @@
 <dimension x1="0" y1="0" x2="0" y2="38.1" x3="-6.35" y3="19.05" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
 <dimension x1="0" y1="38.1" x2="38.1" y2="38.1" x3="19.05" y3="43.18" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
 <text x="-7.62" y="-36.83" size="1.778" layer="51" font="vector">Black Gloss Soldermask</text>
+<text x="8.89" y="39.37" size="1.778" layer="47" font="vector">Units in Inches</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -3736,7 +3737,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </element>
 <element name="FID1" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="36.83" y="30.48" smashed="yes"/>
 <element name="FID2" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="1.016" y="6.985" smashed="yes"/>
-<element name="LOGO2" library="SparkFun-Aesthetics" package="OSHW-LOGO-MINI" value="OSHW-LOGOMINI" x="19.05" y="1.27" smashed="yes" rot="MR0"/>
+<element name="LOGO2" library="SparkFun-Aesthetics" package="OSHW-LOGO-MINI" value="OSHW-LOGOMINI" x="19.05" y="2.54" smashed="yes" rot="MR0"/>
 <element name="FID3" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="1.016" y="6.985" smashed="yes" rot="MR180"/>
 <element name="FID4" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="36.83" y="30.48" smashed="yes" rot="MR0"/>
 <element name="C1" library="SparkFun-Capacitors" package="0603" value="4.7uF" x="23.495" y="22.225" smashed="yes">
