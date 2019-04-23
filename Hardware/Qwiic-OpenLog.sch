@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.1.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -21581,16 +21581,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
 <part name="S2" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST-2" device="-SMD-5.2MM-TALL"/>
+<part name="P+4" library="SparkFun" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="238.76" y="7.62" size="2.54" layer="94" font="vector">v01</text>
 <text x="167.894" y="11.43" size="2.54" layer="94" font="vector">A. England</text>
-<text x="17.78" y="170.18" size="2.54" layer="97" font="vector">I2C Pull-up</text>
-<text x="20.32" y="109.22" size="2.54" layer="97" font="vector">Communication</text>
-<text x="93.98" y="109.22" size="2.54" layer="97" font="vector">MicroSD Socket</text>
-<text x="91.44" y="170.18" size="2.54" layer="97" font="vector">ISP Header</text>
+<text x="2.54" y="180.34" size="2.54" layer="97" font="vector">I2C Pull-up</text>
+<text x="2.54" y="109.22" size="2.54" layer="97" font="vector">Communication</text>
+<text x="71.12" y="109.22" size="2.54" layer="97" font="vector">MicroSD Socket</text>
+<text x="71.12" y="180.34" size="2.54" layer="97" font="vector">ISP Header</text>
 <wire x1="68.58" y1="53.34" x2="0" y2="53.34" width="0.2032" layer="97" style="shortdash"/>
 <wire x1="147.32" y1="43.18" x2="147.32" y2="114.3" width="0.2032" layer="97" style="shortdash"/>
 <wire x1="147.32" y1="114.3" x2="147.32" y2="185.42" width="0.2032" layer="97" style="shortdash"/>
@@ -21602,8 +21603,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="68.58" y1="53.34" x2="68.58" y2="43.18" width="0.2032" layer="97" style="shortdash"/>
 <wire x1="68.58" y1="43.18" x2="147.32" y2="43.18" width="0.2032" layer="97" style="shortdash"/>
 <wire x1="147.32" y1="43.18" x2="147.32" y2="35.56" width="0.2032" layer="97" style="shortdash"/>
-<text x="185.42" y="172.72" size="2.54" layer="97" font="vector">ATMEGA328</text>
-<text x="185.42" y="170.18" size="1.778" layer="97" font="vector">Operating voltage: 1.5-3.6 V</text>
+<text x="149.86" y="180.34" size="2.54" layer="97" font="vector">ATMEGA328</text>
+<text x="149.86" y="177.8" size="1.778" layer="97" font="vector">Operating voltage: 1.5-3.6 V</text>
+<text x="2.54" y="106.68" size="1.778" layer="97" font="vector">Input Voltage Range: 1.5-3.6 V</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -21815,6 +21817,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VALUE" x="119.38" y="5.08" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="S2" gate="G$1" x="114.3" y="22.86"/>
+<instance part="P+4" gate="G$1" x="236.22" y="91.44" smashed="yes">
+<attribute name="VALUE" x="235.204" y="94.996" size="1.778" layer="96" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -22049,14 +22054,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U2" gate="U1" pin="PB2(SS/OC1B)"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<wire x1="220.98" y1="111.76" x2="236.22" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="111.76" x2="236.22" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="U2" gate="U1" pin="PD5(T1)"/>
-</segment>
-</net>
 <net name="3.3V" class="0">
 <segment>
 <wire x1="170.18" y1="162.56" x2="170.18" y2="160.02" width="0.1524" layer="91"/>
@@ -22139,6 +22136,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
 <wire x1="104.14" y1="35.56" x2="104.14" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="236.22" y1="91.44" x2="236.22" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="P+4" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
 <net name="SCL" class="0">
