@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.2">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4445,7 +4445,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <via x="10.8966" y="30.0228" extent="1-16" drill="0.381"/>
 <contactref element="J6" pad="P$2"/>
 <via x="16.51" y="8.89" extent="1-16" drill="0.381"/>
-<via x="21.463" y="15.621" extent="1-16" drill="0.35"/>
+<via x="21.463" y="15.621" extent="1-16" drill="0.381"/>
 <via x="19.685" y="20.32" extent="1-16" drill="0.381"/>
 <via x="7.62" y="20.32" extent="1-16" drill="0.381"/>
 <via x="13.97" y="21.59" extent="1-16" drill="0.381"/>
@@ -4482,7 +4482,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="22.606003125" y1="13.6652" x2="27.6352" y2="13.6652" width="0.2032" layer="1"/>
 <wire x1="28.95" y1="14.98" x2="27.6352" y2="13.6652" width="0.2032" layer="1"/>
 <wire x1="12.065" y1="16.764" x2="15.24" y2="13.589" width="0.2032" layer="16"/>
-<via x="15.24" y="12.954" extent="1-16" drill="0.35"/>
+<via x="15.24" y="12.954" extent="1-16" drill="0.381"/>
 <wire x1="15.24" y1="13.589" x2="15.24" y2="12.954" width="0.2032" layer="16"/>
 <wire x1="19.7358" y1="12.954" x2="15.24" y2="12.954" width="0.2032" layer="1"/>
 <wire x1="20.447" y1="13.6652" x2="19.7358" y2="12.954" width="0.2032" layer="1"/>
@@ -4715,9 +4715,9 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="37.084" y1="18.923" x2="37.084" y2="13.97" width="0.2032" layer="1"/>
 <wire x1="37.084" y1="13.97" x2="37.084" y2="13.589" width="0.2032" layer="1"/>
 <wire x1="35.775" y1="13.97" x2="37.084" y2="13.97" width="0.2032" layer="1"/>
-<wire x1="10.4648" y1="23.6982" x2="17.6022" y2="23.6982" width="0.2032" layer="1"/>
-<wire x1="17.6022" y1="23.6982" x2="19.177" y2="25.273" width="0.2032" layer="1"/>
-<wire x1="19.177" y1="25.273" x2="19.177" y2="28.702" width="0.2032" layer="1"/>
+<wire x1="10.4648" y1="23.6982" x2="17.2212" y2="23.6982" width="0.2032" layer="1"/>
+<wire x1="17.2212" y1="23.6982" x2="19.177" y2="25.654" width="0.2032" layer="1"/>
+<wire x1="19.177" y1="25.654" x2="19.177" y2="28.702" width="0.2032" layer="1"/>
 <wire x1="24.13" y1="33.655" x2="24.13" y2="34.29" width="0.2032" layer="1"/>
 <wire x1="19.177" y1="28.702" x2="24.13" y2="33.655" width="0.2032" layer="1"/>
 <contactref element="D4" pad="C"/>
@@ -4840,7 +4840,6 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="21,19,b2dab0d8b0d8b2da"/>
 <approved hash="4,1,db709b8283fa13d4"/>
 <approved hash="4,1,4bb1bca186855145"/>
 <approved hash="4,1,d78020a3be47597b"/>
