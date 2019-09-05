@@ -549,4 +549,3 @@ void loadArrayWithFileName(FatFile * theDir, char * cmdStr)
   tempFile.close();
   return;
 }
-

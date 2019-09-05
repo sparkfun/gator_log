@@ -289,4 +289,3 @@ void recordConfigFile(void)
   myFile.close(); //Close this file causing it to sync
   //Now that the new config file has the current system settings, nothing else to do!
 }
-

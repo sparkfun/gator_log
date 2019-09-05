@@ -524,4 +524,3 @@ void startI2C()
   else
     Wire.begin(EEPROM.read(LOCATION_I2C_ADDRESS)); //Start I2C and answer calls using address from EEPROM
 }
-

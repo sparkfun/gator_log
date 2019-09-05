@@ -125,4 +125,3 @@ boolean appendFile(char* file_name)
   }
   return (true); //File is now open
 }
-
